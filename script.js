@@ -135,7 +135,7 @@ function initCarousel() {
 
     function step() {
         if (!isPaused) {
-            scrollContainer.scrollTop += 0.33; // Speed of the feed
+            scrollContainer.scrollTop += 0.6; // Speed of the feed
             
             // Seamless loop: if we hit the bottom, snap to top
             if (scrollContainer.scrollTop >= (scrollContainer.scrollHeight - scrollContainer.clientHeight)) {
