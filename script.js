@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadedChartData = parsedData;
 
                 // Limit to 50 records + 1 for header
-                const limitedData = parsedData.slice(0, 51); 
+                // const limitedData = parsedData.slice(0, 51); 
 
-                renderData(limitedData, container);
+                renderData(parsedData, container);
                 renderCharts(parsedData);
                 
                 // Start the autoscroll flow
-                initCarousel();
+                // initCarousel();
             })
             .catch(error => {
                 container.innerHTML = `<tr><td colspan="5" style="color:red; padding:20px;">
@@ -135,7 +135,7 @@ function initCarousel() {
 
     function step() {
         if (!isPaused) {
-            scrollContainer.scrollTop += 0.6; // Speed of the feed
+            scrollContainer.scrollTop += 0; // Speed of the feed
             
             // Seamless loop: if we hit the bottom, snap to top
             if (scrollContainer.scrollTop >= (scrollContainer.scrollHeight - scrollContainer.clientHeight)) {

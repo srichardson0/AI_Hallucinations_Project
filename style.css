@@ -708,8 +708,8 @@ tr.linked.open .toggle-arrow {
 /* 1. The Scroll Container */
 #full-table {
     width: 100%;
-    max-height: 1500px; /* Adjust this to your preferred height */
-    overflow-y: hidden; /* Controlled by JS */
+    /* max-height: 1500px; /* Adjust this to your preferred height */ */
+    overflow-y: auto; /* Allow manual scrolling if needed */
     position: relative;
 }
 
