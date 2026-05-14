@@ -9,13 +9,6 @@ A dataset of 100+ AI hallucinations — their prompts, the models that produced 
 ├── data/                                              # The published datasets
 │   ├── model_hallucinations_BlackAmericanHistory.csv
 │   └── model_hallucinations_PuertoRicanHistory.csv
-├── web-dev-code/                                      # Project website (static HTML/CSS/JS)
-│   ├── index.html        # Home — dataset table + charts
-│   ├── about.html        # Project statement + team
-│   ├── methods.html      # Methodology narrative
-│   ├── data.html         # Dataset download
-│   ├── style.css
-│   └── script.js
 └── README.md
 ```
 
@@ -62,20 +55,7 @@ A short version (full narrative on [methods.html](web-dev-code/methods.html)):
 3. **The reading** — each response read against its verification source; errors classified using the controlled vocabulary above and described in plain language.
 4. **The output** — annotated records exported to the two CSVs in `data/`.
 
-## Viewing the website locally
 
-The site is static — no build step. Open `web-dev-code/index.html` through a local web server (the `fetch()` calls that load the CSVs won't work from `file://`).
-
-With VS Code Live Server:
-
-1. Install the **Live Server** extension
-2. Right-click `web-dev-code/index.html` → **Open with Live Server**
-
-Or, with Python:
-
-```bash
-python -m http.server 8000
-# then open http://localhost:8000/web-dev-code/
 ```
 
 ## Team
@@ -87,4 +67,3 @@ python -m http.server 8000
 ## Links
 
 - Project Are.na board: <https://www.are.na/michelle-sc/ai-hallucinations-project>
-- Repository: <https://github.com/srichardson0/AI_Hallucinations_Project>
